@@ -57,4 +57,8 @@ public class CarController {
         return HttpStatus.NOT_FOUND;
     }
 
+    @DeleteMapping("")
+    public void deleteAll(){
+        carRepository.deleteAll();
+    }
 }
